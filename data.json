@@ -1,0 +1,39 @@
+{
+  "api": {
+    "name": "BLAZIX S4 Prediction API",
+    "version": "1.0",
+    "description": "GitHub Pages hosted prediction API with custom logic",
+    "endpoints": {
+      "/api/current": "Get current prediction",
+      "/api/stats": "Get statistics",
+      "/api/history": "Get prediction history",
+      "/api/previous": "Get previous results",
+      "/api/status": "Get system status",
+      "/api/all": "Get all data",
+      "/api/update": "Force update",
+      "/api/calculate/{numbers}": "Manual calculation with custom numbers"
+    }
+  },
+  "example_response": {
+    "current_prediction": {
+      "period": "1234",
+      "prediction": "BIG",
+      "status": "pending",
+      "derived_number": 7,
+      "confidence": 82,
+      "prediction_time": "12:15:30 PM",
+      "logic_type": "custom"
+    },
+    "statistics": {
+      "total_trades": 50,
+      "total_win": 35,
+      "total_loss": 12,
+      "total_pending": 3,
+      "total_accuracy": "74%",
+      "win_streak": 8,
+      "loss_streak": 3,
+      "current_streak": 2,
+      "recent_win_rate": "75%"
+    }
+  }
+}
